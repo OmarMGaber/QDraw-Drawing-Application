@@ -4,7 +4,8 @@
     "description": "Modern Vector & Freehand Drawing Application",
     "author": "OmarMGaber",
     "authorUrl": "https://github.com/OmarMGaber",
-    "githubUrl": "https://github.com/OmarMGaber/QDraw-Drawing-Application"
+    "githubUrl": "https://github.com/OmarMGaber/QDraw-Drawing-Application",
+    "icon": "assets/brand/logo.png"
   },
   "shortcuts": [
     {
@@ -64,10 +65,20 @@
       "id": "tool_ellipse",
       "name": "Ellipse Tool",
       "category": "Tools",
-      "description": "Draw ellipses and circles",
+      "description": "Draw ellipses and ovals",
       "displayKey": "O",
       "sequences": [
         "O"
+      ]
+    },
+    {
+      "id": "tool_circle",
+      "name": "Circle Tool",
+      "category": "Tools",
+      "description": "Draw proportional circles",
+      "displayKey": "C",
+      "sequences": [
+        "C"
       ]
     },
     {
