@@ -50,10 +50,13 @@ QPointF closestPointOnRect(QPointF point, const QRectF& rect);
 /// Hit test: checks if circle (centre, radius) intersects rectangle (outline or filled interior).
 bool rectangleIntersectsCircle(const QRectF& rect, qreal strokeWidth, bool fillEnabled, QPointF centre, qreal radius);
 
-// --- Ellipse Object Math ---
+// --- Ellipse & Circle Object Math ---
 
 /// Bounding rectangle for an ellipse, padded by stroke width.
 QRectF calculateEllipseBoundingRect(const QRectF& rect, qreal strokeWidth);
+
+/// Bounding box for a circle gesture constrained to a 1:1 aspect ratio square.
+QRectF calculateCircleBoundingBox(QPointF start, QPointF end);
 
 /// Checks if a test point lies inside or on the normalized boundary of an ellipse inscribed in @p rect.
 bool isPointInsideEllipse(QPointF point, const QRectF& rect);

@@ -108,6 +108,17 @@ QRectF calculateEllipseBoundingRect(const QRectF& rect, qreal strokeWidth) {
     return rect.adjusted(-pad, -pad, pad, pad);
 }
 
+QRectF calculateCircleBoundingBox(QPointF start, QPointF end) {
+    const qreal dx = end.x() - start.x();
+    const qreal dy = end.y() - start.y();
+    const qreal side = std::max(std::abs(dx), std::abs(dy));
+
+    const qreal left = (dx >= 0.0) ? start.x() : (start.x() - side);
+    const qreal top = (dy >= 0.0) ? start.y() : (start.y() - side);
+
+    return QRectF(left, top, side, side);
+}
+
 bool isPointInsideEllipse(QPointF point, const QRectF& rect) {
     qreal a = rect.width() * 0.5;
     qreal b = rect.height() * 0.5;
