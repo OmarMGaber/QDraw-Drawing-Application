@@ -1,0 +1,20 @@
+services:
+  qdraw:
+    build: .
+    image: qdraw:latest
+    container_name: qdraw
+    environment:
+      DISPLAY: ${DISPLAY:-:0}
+      QT_QPA_PLATFORM: xcb
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+    devices:
+      - /dev/dri:/dev/dri
+    security_opt:
+      - seccomp:unconfined
+
+  test:
+    build:
+      context: .
+      target: builder
+    command: ctest --test-dir build --output-on-failure

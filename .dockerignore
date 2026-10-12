@@ -1,0 +1,7 @@
+builds/
+build/
+.git/
+.gitignore
+.dockerignore
+Dockerfile
+docker-compose.yml
