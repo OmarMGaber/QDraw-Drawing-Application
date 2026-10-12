@@ -2,6 +2,8 @@
 
 A simple vector sketching and drawing desktop application built with Qt 6 (Quick / QML) and C++20.
 
+![QDraw Screenshot](assets/docs/qdraw-screenshot.png)
+
 ## Architecture Overview
 
 ```mermaid
