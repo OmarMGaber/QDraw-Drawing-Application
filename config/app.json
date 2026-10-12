@@ -1,0 +1,132 @@
+{
+  "app": {
+    "name": "QDraw",
+    "description": "Modern Vector & Freehand Drawing Application",
+    "author": "OmarMGaber",
+    "authorUrl": "https://github.com/OmarMGaber",
+    "githubUrl": "https://github.com/OmarMGaber/QDraw-Drawing-Application"
+  },
+  "shortcuts": [
+    {
+      "id": "undo",
+      "name": "Undo",
+      "category": "History",
+      "description": "Undo the last drawing action",
+      "displayKey": "Ctrl + Z",
+      "sequences": [
+        "StandardKey.Undo",
+        "Ctrl+Z"
+      ]
+    },
+    {
+      "id": "redo",
+      "name": "Redo",
+      "category": "History",
+      "description": "Redo the previously undone action",
+      "displayKey": "Ctrl + Y",
+      "sequences": [
+        "StandardKey.Redo",
+        "Ctrl+Y",
+        "Ctrl+Shift+Z"
+      ]
+    },
+    {
+      "id": "tool_pen",
+      "name": "Pen Tool",
+      "category": "Tools",
+      "description": "Freehand sketching & drawing",
+      "displayKey": "P",
+      "sequences": [
+        "P"
+      ]
+    },
+    {
+      "id": "tool_eraser",
+      "name": "Eraser Tool",
+      "category": "Tools",
+      "description": "Erase strokes and canvas objects",
+      "displayKey": "E",
+      "sequences": [
+        "E"
+      ]
+    },
+    {
+      "id": "tool_rectangle",
+      "name": "Rectangle Tool",
+      "category": "Tools",
+      "description": "Draw rectangles and squares",
+      "displayKey": "R",
+      "sequences": [
+        "R"
+      ]
+    },
+    {
+      "id": "tool_ellipse",
+      "name": "Ellipse Tool",
+      "category": "Tools",
+      "description": "Draw ellipses and circles",
+      "displayKey": "O",
+      "sequences": [
+        "O"
+      ]
+    },
+    {
+      "id": "tool_line",
+      "name": "Line Tool",
+      "category": "Tools",
+      "description": "Draw straight line segments",
+      "displayKey": "L",
+      "sequences": [
+        "L"
+      ]
+    },
+    {
+      "id": "zoom_in",
+      "name": "Zoom In",
+      "category": "View",
+      "description": "Increase application UI scale",
+      "displayKey": "Ctrl + +",
+      "sequences": [
+        "Ctrl++",
+        "Ctrl+=",
+        "Ctrl+Shift+=",
+        "StandardKey.ZoomIn"
+      ]
+    },
+    {
+      "id": "zoom_out",
+      "name": "Zoom Out",
+      "category": "View",
+      "description": "Decrease application UI scale",
+      "displayKey": "Ctrl + -",
+      "sequences": [
+        "Ctrl+-",
+        "Ctrl+_",
+        "StandardKey.ZoomOut"
+      ]
+    },
+    {
+      "id": "zoom_reset",
+      "name": "Reset Zoom",
+      "category": "View",
+      "description": "Reset application scale to 100%",
+      "displayKey": "Ctrl + 0",
+      "sequences": [
+        "Ctrl+0",
+        "StandardKey.ZoomReset"
+      ]
+    },
+    {
+      "id": "help",
+      "name": "Help & Shortcuts",
+      "category": "General",
+      "description": "Open help modal and shortcut reference",
+      "displayKey": "F1",
+      "sequences": [
+        "F1",
+        "Ctrl+H",
+        "Ctrl+?"
+      ]
+    }
+  ]
+}

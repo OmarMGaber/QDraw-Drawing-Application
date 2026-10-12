@@ -1,0 +1,28 @@
+{
+  "theme": {
+    "background": "#121214",
+    "surface": "#18181b",
+    "surfaceElevated": "#1f1f23",
+    "surfaceHover": "#27272a",
+    "border": "#27272a",
+    "borderStrong": "#3f3f46",
+    "textPrimary": "#fafafa",
+    "textSecondary": "#a1a1aa",
+    "textMuted": "#71717a",
+    "textSubtle": "#52525b",
+    "accent": "#38bdf8",
+    "accentHover": "#60a5fa",
+    "controlActive": "#e4e4e7",
+    "overlay": "#d009090b"
+  },
+  "palettePresets": [
+    "#000000",
+    "#ffffff",
+    "#71717a",
+    "#ef4444",
+    "#f59e0b",
+    "#10b981",
+    "#3b82f6",
+    "#8b5cf6"
+  ]
+}
