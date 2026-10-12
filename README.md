@@ -20,7 +20,7 @@ graph TD
     Controller["DrawingController\n(Central Coordinator & Context Property)"]:::ctrl
 
     subgraph CoreBackend["Core Engine Subsystems (C++)"]
-        Tools["Tools Subsystem\nPen, Eraser, Rectangle, Ellipse, Line"]:::core
+        Tools["Tools Subsystem\nPen, Eraser, Rectangle, Ellipse, Circle, Line"]:::core
         Options["Options Subsystem\nToolOptionModel & Typed ToolOptions"]:::core
         History["History Subsystem\nQUndoStack & Command Pattern"]:::core
         Document["Drawing Subsystem\nDrawingDocument & DrawingObject Hierarchy"]:::core
